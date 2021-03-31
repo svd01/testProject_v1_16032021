@@ -1,21 +1,63 @@
 package com.company;
 
-public class Main {
+import java.io.IOException;
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-	// write your code here
+public class Main<sum> {
+
+    public static void main(String[] args) throws IOException {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите строку: ");
+        String strOne = in.nextLine();
+        System.out.println("Введите число: ");
+        String strTwo = in.nextBigInteger().toString();
+        int integerOne = Integer.parseInt(strOne);
+        int integerTwo = Integer.parseInt(strTwo);
+        Integer sum = 0;
+            if (integerOne > 0 && integerTwo > 0)
+                 sum = (integerOne + integerTwo);
+            System.out.println(sum);
 
 
-        int y;
-        for (int x = 1; x < 6; x++) {
-            try {
-                y = x;
-                if (y == 3)
-                    throw new Exception(y + " <-- Исключение");
-                System.out.println(y);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+
+
+
+//        // Makes sure that both string.charAt(x) and string.charAt(x+1) are integers
+//        for()
+//            if (string >= 0 && integer2 >= 0) {
+//                System.out.println("OK");
+//            } else {
+//                System.out.println("NOK");
+//
+//                System.out.println("All: " + sum);
+//
+//                System.out.println(sum);
+
+
+//        int inChar;
+//        StringBuilder s = new StringBuilder();
+//        try {
+//            inChar = System.in.read();
+//            while (System.in.available() > 0) {
+//                StringBuilder append = s.append((char) inChar);
+//                inChar = System.in.read();
+//            }
+//        } catch (IOException e) {
+//            System.out.println("Ошибка");
+//        }
+
+
+//        int y;
+//        for (int x = 1; x < 6; x++) {
+//            try {
+//                y = x;
+//                if (y == 3)
+//                    throw new Exception(y + " <-- Исключение");
+//                System.out.println(y);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
 
 //        System.out.println(" On an adventure!  ");
 //        String s1="Шаурмяу";
@@ -75,6 +117,6 @@ public class Main {
 //        System.out.println(s5_3);
 //        System.out.println(s5_4);
 
-}}}
-
+    }
+}
 
